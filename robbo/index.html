@@ -1,0 +1,35 @@
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@600&display=swap" rel="stylesheet">
+  <script type="module">
+    import init from './assets/wasm/target/bevy-robbo.js'
+    init()
+  </script>
+  <style>
+    * {
+      font-family: 'Source Code Pro', monospace;
+    }
+    #board {
+      font-size: 2em;
+      margin: 0px;
+      line-height: 120%;
+    }
+    #inventory {
+      font-size: 1.5em;
+      margin: 1em;
+    }
+  </style>
+  <body>
+    <div>
+      <canvas id="bevy-canvas" tabIndex="0" autofocus height="576" width="992"></canvas>
+      <div id="inventory"></div>
+      <p>
+        Arrows: move<br />
+        Shift + Arrow: shot<br />
+        PageUp / PageDown: change level<br />
+        Esc: kill Robbo</p>
+    </div>
+  </body>
+</html>
