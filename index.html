@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base target="webgl">
+    <title>Bevy WASM examples</title>
+    <link rel="stylesheet" href="css/pure/pure-min.css">
+    <link rel="stylesheet" href="css/side-menu.css">
+    <style>
+        iframe {
+            border-width: 0px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="layout">
+        <!-- Menu toggle -->
+        <a href="#menu" id="menuLink" class="menu-link">
+            <!-- Hamburger icon -->
+            <span></span>
+        </a>
+
+        <div id="menu">
+            <div class="pure-menu">
+                <ul class="pure-menu-list">
+                    <li class="pure-menu-heading">2-D</li>
+                    <li class="pure-menu-item"> <a href="sprite.html" class="pure-menu-link">sprite</a></li>
+                    <li class="pure-menu-item"><a href="sprite_sheet.html" class="pure-menu-link">sprite_sheet</a></li>
+                    <li class="pure-menu-heading">3-D</li>
+                    <li class="pure-menu-item">
+                        <a href="3d_scene.html" class="pure-menu-link">3d_scene</a>
+                    </li>
+                    <li class="pure-menu-item">
+                        <a href="load_model.html" class="pure-menu-link">load_model</a>
+                    </li>
+                    <li class="pure-menu-item">
+                        <a href="parenting.html" class="pure-menu-link">parenting</a>
+                    </li>
+                    <li class="pure-menu-item">
+                        <a href="texture.html" class="pure-menu-link">texture</a>
+                    </li>
+                    <li class="pure-menu-item">
+                        <a href="z_sort_debug.html" class="pure-menu-link">z_sort_debug</a>
+                    </li>
+                    <li class="pure-menu-heading">Other</li>
+                    <li class="pure-menu-item">
+                        <a href="https://mrk.sed.pl/bevy-robbo/" class="pure-menu-link">Robbo!</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+        <div id="main">
+            <!--
+        <div class="header">
+            <h1>Page Title</h1>
+            <h2>A subtitle for your page goes here</h2>
+        </div>
+    -->
+
+            <div class="content">
+                <iframe width="1280" height="730" name="webgl" src="sprite.html"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <script src="/js/ui.js"></script>
+
+</body>
+
+</html>
